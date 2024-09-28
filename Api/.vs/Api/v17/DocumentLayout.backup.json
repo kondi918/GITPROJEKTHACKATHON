@@ -150,8 +150,7 @@
               "RelativeToolTip": "Api\\Responses\\SingleQuizResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T19:58:29.846Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-28T19:58:29.846Z"
             },
             {
               "$type": "Document",
@@ -163,8 +162,7 @@
               "RelativeToolTip": "Api\\Services\\QuizService.cs",
               "ViewState": "AgIAAKIAAAAAAAAAAAAawLAAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T16:08:11.26Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-28T16:08:11.26Z"
             },
             {
               "$type": "Document",
@@ -176,8 +174,7 @@
               "RelativeToolTip": "Api\\Models\\DTO\\QuizDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T15:45:49.253Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-28T15:45:49.253Z"
             },
             {
               "$type": "Document",
@@ -189,8 +186,7 @@
               "RelativeToolTip": "Api\\Models\\DTO\\QuestionDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T15:46:14.355Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-28T15:46:14.355Z"
             },
             {
               "$type": "Document",
@@ -202,8 +198,7 @@
               "RelativeToolTip": "Api\\Models\\DTO\\AnswerDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T15:46:45.927Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-28T15:46:45.927Z"
             },
             {
               "$type": "Document",
@@ -215,8 +210,7 @@
               "RelativeToolTip": "Api\\Data\\DatabaseContext.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T11:22:44.208Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-28T11:22:44.208Z"
             },
             {
               "$type": "Document",
@@ -228,8 +222,7 @@
               "RelativeToolTip": "Api\\Models\\Quizes.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T12:56:14.854Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-28T12:56:14.854Z"
             },
             {
               "$type": "Document",
@@ -241,8 +234,7 @@
               "RelativeToolTip": "Api\\Models\\Questions.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T12:57:37.427Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-28T12:57:37.427Z"
             },
             {
               "$type": "Document",
@@ -252,7 +244,7 @@
               "RelativeDocumentMoniker": "Api\\Controllers\\QuizController.cs",
               "ToolTip": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Controllers\\QuizController.cs",
               "RelativeToolTip": "Api\\Controllers\\QuizController.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAEsAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAAAFAAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-28T15:40:17.906Z",
               "EditorCaption": ""
@@ -267,8 +259,7 @@
               "RelativeToolTip": "Api\\Models\\DTO\\UserDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T12:25:32.43Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-28T12:25:32.43Z"
             },
             {
               "$type": "Document",
@@ -280,8 +271,7 @@
               "RelativeToolTip": "Api\\Services\\UserService.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAiwEkAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T12:31:30.352Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-28T12:31:30.352Z"
             },
             {
               "$type": "Document",
@@ -293,8 +283,7 @@
               "RelativeToolTip": "Api\\Models\\Requests\\CreateQuizRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T15:44:49.492Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-28T15:44:49.492Z"
             },
             {
               "$type": "Document",
@@ -306,8 +295,7 @@
               "RelativeToolTip": "Api\\Controllers\\UsersController.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T12:11:18.023Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-28T12:11:18.023Z"
             },
             {
               "$type": "Document",
