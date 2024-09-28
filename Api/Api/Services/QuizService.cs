@@ -4,6 +4,7 @@ using Api.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Components.Web;
 using Api.Models.DTO;
+using Api.Responses;
 
 namespace Api.Services
 {
@@ -162,10 +163,34 @@ namespace Api.Services
                         Description = quiz.Description,
                         Title = quiz.Title,
                         PointRewards = quiz.PointRewards,
+                        Id = quiz.Id
                     });
                 }
                 return allQuizes;
 
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error occured while getting all quizes: " + ex.Message);
+            }
+        }
+        public async Task<SingleQuizResponse> GetSingleQuiz(int categoryId)
+        {
+            try
+            {
+                SingleQuizResponse singleQuizResponse = new SingleQuizResponse();
+                var quiz = await _databaseContext.Quizes.Include(q => q.Questions).FirstOrDefaultAsync(q => q.Id == categoryId);
+                singleQuizResponse.Description = quiz.Description;
+                singleQuizResponse.Title = quiz.Title;
+                singleQuizResponse.Category = quiz.Category;
+                singleQuizResponse.PointRewards = quiz.PointRewards;
+                List<int> questionsIds = new List<int>();
+                foreach (var question in quiz.Questions)
+                {
+                   questionsIds.Add(question.Id);
+                }
+                singleQuizResponse.questionsIds = questionsIds;
+                return singleQuizResponse;
             }
             catch (Exception ex)
             {

@@ -1,12 +1,11 @@
-﻿namespace Api.Models.DTO
+﻿namespace Api.Responses
 {
-    public class QuizDTO
+    public class SingleQuizResponse
     {
-        public int Id { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
         public string Category { get; set; }
         public int PointRewards { get; set; }
-
+        public List<int> questionsIds { get; set; }
     }
 }
