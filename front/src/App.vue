@@ -1,9 +1,16 @@
 <template>
   <div id="app">
-    <UserProfileIcon />
-    <CategoryPage />
-    <ShopPage />
-    <AppQuizPage />
+    <template v-if="isLoggedIn">
+      <!-- Główne komponenty aplikacji -->
+      <UserProfileIcon />
+      <CategoryPage />
+      <ShopPage />
+      <AppQuizPage />
+    </template>
+    <template v-else>
+      <LoginPage v-if="showLogin" @login="login" @show-register="showRegisterPage" />
+      <RegisterPage v-else @login="login" @show-login="showLoginPage" />
+    </template>
   </div>
 </template>
 
@@ -12,6 +19,8 @@ import AppQuizPage from './components/pages/AppQuizPage.vue';
 import CategoryPage from './components/pages/CategoryPage.vue';
 import ShopPage from './components/pages/ShopPage.vue';
 import UserProfileIcon from './components/parts/UserProfileIcon.vue';
+import LoginPage from './components/pages/LoginPage.vue';
+import RegisterPage from './components/pages/RegisterPage.vue';
 
 export default {
   name: 'App',
@@ -19,9 +28,29 @@ export default {
     CategoryPage,
     ShopPage,
     UserProfileIcon,
-    AppQuizPage
+    AppQuizPage,
+    LoginPage,
+    RegisterPage
   },
-}
+  data() {
+    return {
+      isLoggedIn: false,
+      showLogin: true // Kontrola, czy pokazujemy stronę logowania
+    };
+  },
+  methods: {
+    login() {
+      this.isLoggedIn = true;
+      this.showLogin = true; // Przełącz na stronę główną po zalogowaniu
+    },
+    showRegisterPage() {
+      this.showLogin = false; // Przełącz na stronę rejestracji
+    },
+    showLoginPage() {
+      this.showLogin = true; // Przełącz na stronę logowania
+    }
+  }
+};
 </script>
 
 <style>
@@ -33,14 +62,14 @@ export default {
 #app {
   background-color: #000;
   overflow: hidden;
-  min-height: 200vh;
+  min-height: 100vh;
 }
 
 .page {
   min-height: 100vh;
 }
 
-.font-fredoka{
+.font-fredoka {
   font-family: 'Fredoka';
 }
 </style>
