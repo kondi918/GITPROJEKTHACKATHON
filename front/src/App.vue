@@ -49,6 +49,7 @@ export default {
       if (prevSection >= 0) {
         sections[prevSection].scrollIntoView({ behavior: 'smooth' });
       }
+      //tesr
     },
   }
 }
