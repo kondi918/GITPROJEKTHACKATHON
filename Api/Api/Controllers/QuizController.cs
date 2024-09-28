@@ -1,6 +1,7 @@
 ﻿using Api.Data;
 using Api.Models.DTO;
 using Api.Models.Requests;
+using Api.Responses;
 using Api.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -45,7 +46,7 @@ namespace Api.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<ActionResult<List<UserDTO>>> GetAllQuizes(string category)
+        public async Task<ActionResult<List<QuizDTO>>> GetAllQuizes(string category)
         {
             try
             {
@@ -62,6 +63,30 @@ namespace Api.Controllers
                 return StatusCode(500, ex.Message);
             }
         }
+        [HttpGet("GetSingleQuiz", Name = "GetSingleQuiz")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<ActionResult<SingleQuizResponse>> GetSingleQuiz(int quizId)
+        {
+            try
+            {
+                QuizService quizService = new QuizService(_databaseContext);
+                var result = await quizService.GetSingleQuiz(quizId);
+                if (result != null)
+                {
+                    return Ok(result);
+                }
+                return BadRequest();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+        }
+
 
     }
 }
