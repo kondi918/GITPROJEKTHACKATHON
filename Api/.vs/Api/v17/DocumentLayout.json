@@ -3,6 +3,38 @@
   "WorkspaceRootPath": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|c:\\kg\\gitprojekthackathon\\api\\api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|solutionrelative:api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|c:\\kg\\gitprojekthackathon\\api\\api\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|solutionrelative:api\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|c:\\kg\\gitprojekthackathon\\api\\api\\data\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|solutionrelative:api\\data\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|c:\\kg\\gitprojekthackathon\\api\\api\\models\\requests\\createuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|solutionrelative:api\\models\\requests\\createuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|c:\\kg\\gitprojekthackathon\\api\\api\\models\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|solutionrelative:api\\models\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|c:\\kg\\gitprojekthackathon\\api\\api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|solutionrelative:api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|c:\\kg\\gitprojekthackathon\\api\\api\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|solutionrelative:api\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|c:\\kg\\gitprojekthackathon\\api\\api\\migrations\\20240928114806_hackyeah.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|solutionrelative:api\\migrations\\20240928114806_hackyeah.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|c:\\kg\\gitprojekthackathon\\api\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,10 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|c:\\kg\\gitprojekthackathon\\api\\api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|solutionrelative:api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|c:\\kg\\gitprojekthackathon\\api\\api\\data\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|solutionrelative:api\\data\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,16 +57,103 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "DockedWidth": 1157,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Api\\Services\\UserService.cs",
+              "ToolTip": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Services\\UserService.cs",
+              "RelativeToolTip": "Api\\Services\\UserService.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAkwEIAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T12:31:30.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserDTO.cs",
+              "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Models\\DTO\\UserDTO.cs",
+              "RelativeDocumentMoniker": "Api\\Models\\DTO\\UserDTO.cs",
+              "ToolTip": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Models\\DTO\\UserDTO.cs",
+              "RelativeToolTip": "Api\\Models\\DTO\\UserDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T12:25:32.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CreateUserRequest.cs",
+              "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Models\\Requests\\CreateUserRequest.cs",
+              "RelativeDocumentMoniker": "Api\\Models\\Requests\\CreateUserRequest.cs",
+              "ToolTip": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Models\\Requests\\CreateUserRequest.cs",
+              "RelativeToolTip": "Api\\Models\\Requests\\CreateUserRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T12:24:37.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "Api\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "Api\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T12:11:33.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Api\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Api\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T12:11:18.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Users.cs",
+              "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Models\\Users.cs",
+              "RelativeDocumentMoniker": "Api\\Models\\Users.cs",
+              "ToolTip": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Models\\Users.cs",
+              "RelativeToolTip": "Api\\Models\\Users.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T11:43:26.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DatabaseContext.cs",
+              "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Data\\DatabaseContext.cs",
+              "RelativeDocumentMoniker": "Api\\Data\\DatabaseContext.cs",
+              "ToolTip": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Data\\DatabaseContext.cs",
+              "RelativeToolTip": "Api\\Data\\DatabaseContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T11:22:44.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "WeatherForecast.cs",
               "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\WeatherForecast.cs",
               "RelativeDocumentMoniker": "Api\\WeatherForecast.cs",
@@ -51,7 +166,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
+              "Title": "20240928114806_hackyeah.cs",
+              "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Migrations\\20240928114806_hackyeah.cs",
+              "RelativeDocumentMoniker": "Api\\Migrations\\20240928114806_hackyeah.cs",
+              "ToolTip": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Migrations\\20240928114806_hackyeah.cs",
+              "RelativeToolTip": "Api\\Migrations\\20240928114806_hackyeah.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T11:48:07.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\appsettings.json",
               "RelativeDocumentMoniker": "Api\\appsettings.json",
@@ -64,42 +192,51 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DatabaseContext.cs",
-              "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Data\\DatabaseContext.cs",
-              "RelativeDocumentMoniker": "Api\\Data\\DatabaseContext.cs",
-              "ToolTip": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Data\\DatabaseContext.cs",
-              "RelativeToolTip": "Api\\Data\\DatabaseContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T11:22:44.208Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Api",
+              "DocumentIndex": 10,
+              "Title": "Api.csproj",
               "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Api.csproj",
               "RelativeDocumentMoniker": "Api\\Api.csproj",
               "ToolTip": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Api.csproj",
               "RelativeToolTip": "Api\\Api.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2024-09-28T11:21:05.833Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Program.cs",
               "RelativeDocumentMoniker": "Api\\Program.cs",
               "ToolTip": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Program.cs",
               "RelativeToolTip": "Api\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-28T11:09:08.404Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 503,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         }
