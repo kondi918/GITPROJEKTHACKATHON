@@ -11,6 +11,8 @@ namespace Api.Data
         public DbSet<Questions> Questions { get; set; }
         public DbSet<Answers> Answers { get; set; }
         public DbSet<UserAnswers> UserAnswers { get; set; }
+        public DbSet<Rewards> Rewards { get; set; }
+        public DbSet<UserRewards> UserRewards { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -45,6 +47,17 @@ namespace Api.Data
                 .HasOne(ua => ua.Quizes)
                 .WithMany(q => q.UserAnswers)
                 .HasForeignKey(ua => ua.QuizId)
+                .OnDelete(DeleteBehavior.NoAction);
+
+            modelBuilder.Entity<UserRewards>()
+                .HasOne(ur => ur.Rewards)
+                .WithMany(r => r.UserRewards)
+                .HasForeignKey(ur => ur.RewardId)
+                .OnDelete(DeleteBehavior.NoAction);
+            modelBuilder.Entity<UserRewards>()
+                .HasOne(ur => ur.Users)
+                .WithMany(u => u.UserRewards)
+                .HasForeignKey(ur => ur.UserId)
                 .OnDelete(DeleteBehavior.NoAction);
         }
     }

@@ -9,5 +9,6 @@
         public DateTime CreatedAt { get; set; }
         public int Points { get; set; }
         public ICollection<UserAnswers> UserAnswers { get; set; }
+        public ICollection<UserRewards> UserRewards { get; set; }
     }
 }
