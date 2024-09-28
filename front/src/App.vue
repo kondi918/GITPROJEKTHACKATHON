@@ -1,26 +1,66 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <UserProfileIcon />
+    <CategoryPage />
+    <ShopPage />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import CategoryPage from './components/pages/CategoryPage.vue';
+import ShopPage from './components/pages/ShopPage.vue';
+import UserProfileIcon from './components/parts/UserProfileIcon.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    CategoryPage,
+    ShopPage,
+    UserProfileIcon
+  },
+  mounted() {
+    window.addEventListener('wheel', this.handleScroll);
+  },
+  beforeUnmount() {
+    window.removeEventListener('wheel', this.handleScroll);
+  },
+  methods: {
+    handleScroll(event) {
+      if (event.deltaY > 0) {
+        this.scrollToNextSection();
+      } else {
+        this.scrollToPrevSection();
+      }
+    },
+    scrollToNextSection() {
+      const currentSection = Math.floor(window.scrollY / window.innerHeight);
+      const nextSection = currentSection + 1;
+      const sections = document.querySelectorAll('.page');
+
+      if (nextSection < sections.length) {
+        sections[nextSection].scrollIntoView({ behavior: 'smooth' });
+      }
+    },
+    scrollToPrevSection() {
+      const currentSection = Math.floor(window.scrollY / window.innerHeight);
+      const prevSection = currentSection - 1;
+      const sections = document.querySelectorAll('.page');
+
+      if (prevSection >= 0) {
+        sections[prevSection].scrollIntoView({ behavior: 'smooth' });
+      }
+    },
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.page {
+  height: 100vh;
 }
 </style>
