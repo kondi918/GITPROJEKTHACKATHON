@@ -4,7 +4,7 @@ namespace Api.Models.Requests
 {
     public class CreateQuizRequest
     {
-        QuizDTO Quiz { get; set; }
-        List<QuestionDTO> Questions { get; set; }
+        public QuizDTO Quiz { get; set; }
+        public List<QuestionDTO> Questions { get; set; }
     }
 }

@@ -25,12 +25,12 @@ namespace Api.Controllers
             try
             {
                 
-                UserService usersService = new UserService(_databaseContext);
-                //var result = await usersService.AddUser(request);
-               // if (result)
-                //{
-                   // return Ok(true);
-               // }
+                QuizService quizService = new QuizService(_databaseContext);
+                var result = await quizService.AddQuiz(request);
+               if(result)
+               {
+                    return Ok(true);
+               }
                 return BadRequest();
             }
             catch (Exception ex)
