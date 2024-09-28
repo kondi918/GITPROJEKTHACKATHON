@@ -8,5 +8,6 @@
         public string Password { get; set; }
         public DateTime CreatedAt { get; set; }
         public int Points { get; set; }
+        public ICollection<UserAnswers> UserAnswers { get; set; }
     }
 }

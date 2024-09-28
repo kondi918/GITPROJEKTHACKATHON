@@ -135,3 +135,4 @@ C:\KG\GITPROJEKTHACKATHON\Api\Api\obj\Debug\net8.0\refint\Api.dll
 C:\KG\GITPROJEKTHACKATHON\Api\Api\obj\Debug\net8.0\Api.pdb
 C:\KG\GITPROJEKTHACKATHON\Api\Api\obj\Debug\net8.0\Api.genruntimeconfig.cache
 C:\KG\GITPROJEKTHACKATHON\Api\Api\obj\Debug\net8.0\ref\Api.dll
+C:\KG\GITPROJEKTHACKATHON\Api\Api\bin\Debug\net8.0\BCrypt.Net-Next.dll
