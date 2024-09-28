@@ -30,6 +30,6 @@ export default {
 <style scoped>
     .productPageContainer{
         padding-top:80px;
-        min-height:100vh;
+        height:100vh;
     }
 </style>

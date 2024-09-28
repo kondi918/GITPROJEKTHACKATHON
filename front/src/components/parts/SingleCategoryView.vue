@@ -2,10 +2,9 @@
     <div class="col-12 col-md-6 col-lg-4 col-xl-3">
         <div class="categoryViewContainer">
             <div class="categoryIcon">
-                <div class="randomIcon mb-4"></div>
-                <!-- <img :src=categoryImageString /> -->
+                <img :src=categoryImageString />
             </div>
-            <div class="categoryName">
+            <div class="categoryName font-fredoka">
                 {{ categoryName }}
             </div>
         </div>
@@ -32,17 +31,11 @@ export default {
         color:white;
     }
 
-    .randomIcon{
-        width:25px;
-        height:25px;
-        border-radius: 50%;
-        border:1px solid white;
-        background-color: aliceblue;
-    }
-
     .categoryName{
         font-size:24px;
         letter-spacing:2.5px;
         text-transform: uppercase;
+        color: #DDFFDD;
+
     }
 </style>
