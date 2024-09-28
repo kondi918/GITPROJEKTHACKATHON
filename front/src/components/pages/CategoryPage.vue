@@ -30,6 +30,6 @@ export default {
 <style>
     .categoryPageContainer{
         padding-top:80px;
-        height:100vh;
+        min-height:100vh;
     }
 </style>

@@ -26,7 +26,7 @@ export default {
   },
   methods: {
     handleScroll(event) {
-      if (event.deltaY > 0) {
+      if (event.deltaY != 0) {
         this.scrollToNextSection();
       } else {
         this.scrollToPrevSection();
@@ -36,7 +36,7 @@ export default {
       const currentSection = Math.floor(window.scrollY / window.innerHeight);
       const nextSection = currentSection + 1;
       const sections = document.querySelectorAll('.page');
-
+      
       if (nextSection < sections.length) {
         sections[nextSection].scrollIntoView({ behavior: 'smooth' });
       }
@@ -58,9 +58,5 @@ export default {
 #app {
   background-color: #000;
   overflow: hidden;
-}
-
-.page {
-  height: 100vh;
 }
 </style>
