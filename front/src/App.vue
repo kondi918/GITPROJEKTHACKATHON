@@ -55,6 +55,11 @@ export default {
 </script>
 
 <style>
+@font-face {
+    font-family: 'Fredoka'; 
+    src: url('assets/Fredoka/Fredoka-VariableFont_wdth,wght.ttf');
+}
+
 #app {
   background-color: #000;
   overflow: hidden;
@@ -62,5 +67,9 @@ export default {
 
 .page {
   height: 100vh;
+}
+
+.font-fredoka{
+  font-family: 'Fredoka';
 }
 </style>
