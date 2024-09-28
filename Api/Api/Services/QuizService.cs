@@ -146,5 +146,31 @@ namespace Api.Services
                 throw new Exception("Error occured during adding quiz to database. Description: " + ex.Message);
             }
         }
+
+        //Getting every Quiz below
+        public async Task<List<QuizDTO>> GetAllQuizes(string category)
+        {
+            try
+            {
+                var quizzes = await _databaseContext.Quizes.Where(q => q.Category == category).ToListAsync();
+                List<QuizDTO> allQuizes = new List<QuizDTO>();
+                foreach (var quiz in quizzes)
+                {
+                    allQuizes.Add(new QuizDTO
+                    {
+                        Category = quiz.Category,
+                        Description = quiz.Description,
+                        Title = quiz.Title,
+                        PointRewards = quiz.PointRewards,
+                    });
+                }
+                return allQuizes;
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error occured while getting all quizes: " + ex.Message);
+            }
+        }
     }
 }
