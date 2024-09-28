@@ -2,7 +2,7 @@
 {
     public class QuestionDTO
     {
-        List<AnswerDTO> Answers { get; set; }
+        public List<AnswerDTO> Answers { get; set; }
         public string QuestionText { get; set; }
     }
 }
