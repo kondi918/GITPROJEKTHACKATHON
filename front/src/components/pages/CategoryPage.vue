@@ -1,22 +1,17 @@
 <template>
     <div class="page container categoryPageContainer">  
         <div class="row mt-5">
-<<<<<<< HEAD
-            <SingleCategoryView categoryName="matematyka" categoryImageString="matematyka.png" />
-            <SingleCategoryView categoryName="polski" categoryImageString="polski.png" />
-=======
-            <SingleCategoryView categoryName="matematyka" categoryImageString="assets/icons/computer-science.png"/>
-            <SingleCategoryView categoryName="polski" categoryImageString="C:/Users/User/Desktop/GITPROJEKTHACKATHON/front/src/assets/icons/math-presentation.png" />
->>>>>>> origin/tomek
-            <SingleCategoryView categoryName="angielski" categoryImageString="angielski.png" />
-            <SingleCategoryView categoryName="programowanie" categoryImageString="programowanie.png" />
+            <SingleCategoryView categoryName="matematyka" categoryImageString="math-presentation.png"/>
+            <SingleCategoryView categoryName="polski" categoryImageString="book-arrangement.png" />
+            <SingleCategoryView categoryName="angielski" categoryImageString="language-translation.png" />
+            <SingleCategoryView categoryName="programowanie" categoryImageString="computer-science.png" />
         </div>
 
         <div class="row mt-5">
-            <SingleCategoryView categoryName="matematyka" categoryImageString="matematyka.png" />
-            <SingleCategoryView categoryName="polski" categoryImageString="polski.png" />
-            <SingleCategoryView categoryName="angielski" categoryImageString="angielski.png" />
-            <SingleCategoryView categoryName="programowanie" categoryImageString="programowanie.png" />
+            <SingleCategoryView categoryName="geografia" categoryImageString="geographic-navigation.png" />
+            <SingleCategoryView categoryName="historia" categoryImageString="history-book.png" />
+            <SingleCategoryView categoryName="fizyka" categoryImageString="physics-formula.png" />
+            <SingleCategoryView categoryName="muzyka" categoryImageString="musical-note.png" />
         </div>
     </div>
 </template>
@@ -35,10 +30,6 @@ export default {
 <style>
     .categoryPageContainer{
         padding-top:80px;
-<<<<<<< HEAD
-        min-height:100vh;
-=======
         height:100vh;
->>>>>>> origin/tomek
     }
 </style>

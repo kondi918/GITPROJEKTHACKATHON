@@ -2,7 +2,7 @@
     <div class="col-12 col-md-6 col-lg-4 col-xl-3">
         <div class="categoryViewContainer">
             <div class="categoryIcon">
-                <img :src=categoryImageString />
+                <img :src="getImageUrl(categoryImageString)" alt="category image" />
             </div>
             <div class="categoryName font-fredoka">
                 {{ categoryName }}
@@ -17,6 +17,11 @@ export default {
     props: {
         categoryName: String,
         categoryImageString: String
+    },
+    methods: {
+      getImageUrl(imagePath) {
+        return require(`@/assets/icons/${imagePath}`);
+      }
     }
 }
 </script>
@@ -37,5 +42,10 @@ export default {
         text-transform: uppercase;
         color: #DDFFDD;
 
+    }
+
+    .categoryIcon img{
+        filter: invert(1);
+        width: 100px;
     }
 </style>
