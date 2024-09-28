@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Migrations\\20240928142535_hackyeahv2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Api\\Migrations\\20240928142535_hackyeahv2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|c:\\kg\\gitprojekthackathon\\api\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|c:\\kg\\gitprojekthackathon\\api\\api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|solutionrelative:api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|c:\\kg\\gitprojekthackathon\\api\\api\\models\\questions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|solutionrelative:api\\models\\questions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|c:\\kg\\gitprojekthackathon\\api\\api\\models\\quizes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|solutionrelative:api\\models\\quizes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|c:\\kg\\gitprojekthackathon\\api\\api\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|solutionrelative:api\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|c:\\kg\\gitprojekthackathon\\api\\api\\data\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|solutionrelative:api\\data\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|c:\\kg\\gitprojekthackathon\\api\\api\\migrations\\20240928142535_hackyeahv2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|solutionrelative:api\\migrations\\20240928142535_hackyeahv2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|c:\\kg\\gitprojekthackathon\\api\\api\\models\\rewards.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,28 +67,8 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Api\\Migrations\\20240928135929_hackyeahv2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|c:\\kg\\gitprojekthackathon\\api\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|c:\\kg\\gitprojekthackathon\\api\\api\\models\\useranswers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|solutionrelative:api\\models\\useranswers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|c:\\kg\\gitprojekthackathon\\api\\api\\models\\questions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|solutionrelative:api\\models\\questions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|c:\\kg\\gitprojekthackathon\\api\\api\\models\\quizes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|solutionrelative:api\\models\\quizes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|c:\\kg\\gitprojekthackathon\\api\\api\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|solutionrelative:api\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|c:\\kg\\gitprojekthackathon\\api\\api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|solutionrelative:api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|c:\\kg\\gitprojekthackathon\\api\\api\\models\\requests\\createuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -77,14 +77,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|c:\\kg\\gitprojekthackathon\\api\\api\\models\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|solutionrelative:api\\models\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|c:\\kg\\gitprojekthackathon\\api\\api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|solutionrelative:api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|c:\\kg\\gitprojekthackathon\\api\\api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|solutionrelative:api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|c:\\kg\\gitprojekthackathon\\api\\api\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -102,7 +94,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 1157,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -114,46 +106,84 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20240928142535_hackyeahv2.cs",
-              "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Migrations\\20240928142535_hackyeahv2.cs",
-              "RelativeDocumentMoniker": "Api\\Migrations\\20240928142535_hackyeahv2.cs",
-              "ToolTip": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Migrations\\20240928142535_hackyeahv2.cs",
-              "RelativeToolTip": "Api\\Migrations\\20240928142535_hackyeahv2.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "Answers.cs",
+              "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Models\\Answers.cs",
+              "RelativeDocumentMoniker": "Api\\Models\\Answers.cs",
+              "ToolTip": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Models\\Answers.cs",
+              "RelativeToolTip": "Api\\Models\\Answers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T14:25:36.209Z",
+              "WhenOpened": "2024-09-28T13:18:13.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Api\\Services\\UserService.cs",
+              "ToolTip": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Services\\UserService.cs",
+              "RelativeToolTip": "Api\\Services\\UserService.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAnwDMAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T12:31:30.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DatabaseContext.cs",
+              "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Data\\DatabaseContext.cs",
+              "RelativeDocumentMoniker": "Api\\Data\\DatabaseContext.cs",
+              "ToolTip": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Data\\DatabaseContext.cs",
+              "RelativeToolTip": "Api\\Data\\DatabaseContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T11:22:44.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Api\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Api\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwBUAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T12:11:18.023Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "UserRewards.cs",
-              "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Models\\UserRewards.cs",
-              "RelativeDocumentMoniker": "Api\\Models\\UserRewards.cs",
-              "ToolTip": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Models\\UserRewards.cs",
-              "RelativeToolTip": "Api\\Models\\UserRewards.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAoAAAAAAAAAA==",
+              "Title": "Quizes.cs",
+              "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Models\\Quizes.cs",
+              "RelativeDocumentMoniker": "Api\\Models\\Quizes.cs",
+              "ToolTip": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Models\\Quizes.cs",
+              "RelativeToolTip": "Api\\Models\\Quizes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T14:20:08.107Z",
+              "WhenOpened": "2024-09-28T12:56:14.854Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Rewards.cs",
-              "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Models\\Rewards.cs",
-              "RelativeDocumentMoniker": "Api\\Models\\Rewards.cs",
-              "ToolTip": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Models\\Rewards.cs",
-              "RelativeToolTip": "Api\\Models\\Rewards.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAApAAAAAAAAAA==",
+              "Title": "Questions.cs",
+              "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Models\\Questions.cs",
+              "RelativeDocumentMoniker": "Api\\Models\\Questions.cs",
+              "ToolTip": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Models\\Questions.cs",
+              "RelativeToolTip": "Api\\Models\\Questions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T14:18:41.107Z",
+              "WhenOpened": "2024-09-28T12:57:37.427Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "20240928140605_hackyeahv.cs",
               "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Migrations\\20240928140605_hackyeahv.cs",
               "RelativeDocumentMoniker": "Api\\Migrations\\20240928140605_hackyeahv.cs",
@@ -161,12 +191,24 @@
               "RelativeToolTip": "Api\\Migrations\\20240928140605_hackyeahv.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAABZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T14:06:05.801Z",
+              "WhenOpened": "2024-09-28T14:06:05.801Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Program.cs",
+              "RelativeDocumentMoniker": "Api\\Program.cs",
+              "ToolTip": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Program.cs",
+              "RelativeToolTip": "Api\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T11:09:08.404Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "20240928140050_hackyeahv3.cs",
               "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Migrations\\20240928140050_hackyeahv3.cs",
               "RelativeDocumentMoniker": "Api\\Migrations\\20240928140050_hackyeahv3.cs",
@@ -177,21 +219,49 @@
               "WhenOpened": "2024-09-28T14:00:50.681Z"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Answers.cs",
-              "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Models\\Answers.cs",
-              "RelativeDocumentMoniker": "Api\\Models\\Answers.cs",
-              "ToolTip": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Models\\Answers.cs",
-              "RelativeToolTip": "Api\\Models\\Answers.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "20240928142535_hackyeahv2.cs",
+              "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Migrations\\20240928142535_hackyeahv2.cs",
+              "RelativeDocumentMoniker": "Api\\Migrations\\20240928142535_hackyeahv2.cs",
+              "ToolTip": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Migrations\\20240928142535_hackyeahv2.cs",
+              "RelativeToolTip": "Api\\Migrations\\20240928142535_hackyeahv2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T13:18:13.247Z",
+              "WhenOpened": "2024-09-28T14:25:36.209Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
+              "Title": "Rewards.cs",
+              "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Models\\Rewards.cs",
+              "RelativeDocumentMoniker": "Api\\Models\\Rewards.cs",
+              "ToolTip": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Models\\Rewards.cs",
+              "RelativeToolTip": "Api\\Models\\Rewards.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T14:18:41.107Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserRewards.cs",
+              "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Models\\UserRewards.cs",
+              "RelativeDocumentMoniker": "Api\\Models\\UserRewards.cs",
+              "ToolTip": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Models\\UserRewards.cs",
+              "RelativeToolTip": "Api\\Models\\UserRewards.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T14:20:08.107Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Users.cs",
               "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Models\\Users.cs",
               "RelativeDocumentMoniker": "Api\\Models\\Users.cs",
@@ -199,25 +269,11 @@
               "RelativeToolTip": "Api\\Models\\Users.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T11:43:26.276Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-28T11:43:26.276Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DatabaseContext.cs",
-              "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Data\\DatabaseContext.cs",
-              "RelativeDocumentMoniker": "Api\\Data\\DatabaseContext.cs",
-              "ToolTip": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Data\\DatabaseContext.cs",
-              "RelativeToolTip": "Api\\Data\\DatabaseContext.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAIwDwAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T11:22:44.208Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "20240928140237_hackyeahv4.cs",
               "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Migrations\\20240928140237_hackyeahv4.cs",
               "RelativeDocumentMoniker": "Api\\Migrations\\20240928140237_hackyeahv4.cs",
@@ -229,7 +285,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "20240928140408_hackyeahv.cs",
               "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Migrations\\20240928140408_hackyeahv.cs",
               "RelativeDocumentMoniker": "Api\\Migrations\\20240928140408_hackyeahv.cs",
@@ -241,7 +297,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "20240928135929_hackyeahv2.cs",
               "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Migrations\\20240928135929_hackyeahv2.cs",
               "RelativeDocumentMoniker": "Api\\Migrations\\20240928135929_hackyeahv2.cs",
@@ -253,7 +309,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "UserAnswers.cs",
               "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Models\\UserAnswers.cs",
               "RelativeDocumentMoniker": "Api\\Models\\UserAnswers.cs",
@@ -262,66 +318,6 @@
               "ViewState": "AgIAAAIAAAAAAAAAAAAxwAoAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-28T13:26:54.153Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Questions.cs",
-              "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Models\\Questions.cs",
-              "RelativeDocumentMoniker": "Api\\Models\\Questions.cs",
-              "ToolTip": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Models\\Questions.cs",
-              "RelativeToolTip": "Api\\Models\\Questions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T12:57:37.427Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Quizes.cs",
-              "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Models\\Quizes.cs",
-              "RelativeDocumentMoniker": "Api\\Models\\Quizes.cs",
-              "ToolTip": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Models\\Quizes.cs",
-              "RelativeToolTip": "Api\\Models\\Quizes.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T12:56:14.854Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Program.cs",
-              "RelativeDocumentMoniker": "Api\\Program.cs",
-              "ToolTip": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Program.cs",
-              "RelativeToolTip": "Api\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T11:09:08.404Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "Api\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "Api\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T12:11:33.017Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "Api\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "Api\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAuwBMAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T12:11:18.023Z"
             },
             {
               "$type": "Document",
@@ -334,18 +330,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-28T12:24:37.363Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "Api\\Services\\UserService.cs",
-              "ToolTip": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Services\\UserService.cs",
-              "RelativeToolTip": "Api\\Services\\UserService.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAkwEIAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T12:31:30.352Z"
             },
             {
               "$type": "Document",
@@ -362,18 +346,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 20,
-              "Title": "WeatherForecast.cs",
-              "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\WeatherForecast.cs",
-              "RelativeDocumentMoniker": "Api\\WeatherForecast.cs",
-              "ToolTip": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\WeatherForecast.cs",
-              "RelativeToolTip": "Api\\WeatherForecast.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T11:32:38.114Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\appsettings.json",
               "RelativeDocumentMoniker": "Api\\appsettings.json",
@@ -385,7 +357,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 19,
               "Title": "Api.csproj",
               "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Api.csproj",
               "RelativeDocumentMoniker": "Api\\Api.csproj",
@@ -394,10 +366,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2024-09-28T11:21:05.833Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         },

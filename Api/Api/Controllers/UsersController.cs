@@ -32,7 +32,7 @@ namespace Api.Controllers
                 {
                     return Ok(true);
                 }
-                return NotFound();
+                return BadRequest();
             }
             catch (Exception ex)
             {

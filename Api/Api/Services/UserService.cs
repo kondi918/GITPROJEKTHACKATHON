@@ -48,7 +48,8 @@ namespace Api.Services
                 Email = userToAdd.Email,
                 Nick = userToAdd.Nick,
                 Password = BCrypt.Net.BCrypt.HashPassword(userToAdd.Password),
-                CreatedAt = DateTime.Now
+                CreatedAt = DateTime.Now,
+                Points = 0
             };
             return user;
         }
@@ -69,9 +70,10 @@ namespace Api.Services
                     Users newUser = CreateNewUser(userToAdd);
                     await _dbContext.AddAsync(newUser);
                     await _dbContext.SaveChangesAsync();
+                    return true;
                 }
                 
-                return true;
+                return false;
             }
             catch (Exception ex)
             {
