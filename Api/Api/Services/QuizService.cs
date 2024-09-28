@@ -174,6 +174,7 @@ namespace Api.Services
                 throw new Exception("Error occured while getting all quizes: " + ex.Message);
             }
         }
+        //Getting single Quiz below
         public async Task<SingleQuizResponse> GetSingleQuiz(int categoryId)
         {
             try
@@ -197,5 +198,30 @@ namespace Api.Services
                 throw new Exception("Error occured while getting all quizes: " + ex.Message);
             }
         }
+        //Getting every answer below
+
+        public async Task<List<AnswerDTO>> GetAnswers(int questionId)
+        {
+            try
+            {
+                var answers = await _databaseContext.Answers.Where(a => a.QuestionId == questionId).ToListAsync();
+                List<AnswerDTO> answerList = new List<AnswerDTO>();
+                foreach(var answer in answers)
+                {
+                    answerList.Add(new AnswerDTO
+                    {
+                        Id = answer.Id,
+                        AnswerText = answer.AnswerText,
+                        IsCorrect = answer.IsCorrect,
+                    });
+                }
+                return answerList;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error occured while getting all quizes: " + ex.Message);
+            }
+        }
+
     }
 }

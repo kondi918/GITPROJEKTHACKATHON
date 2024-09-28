@@ -11,6 +11,10 @@
       "RelativeMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|solutionrelative:api\\services\\quizservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|c:\\kg\\gitprojekthackathon\\api\\api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|solutionrelative:api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|c:\\kg\\gitprojekthackathon\\api\\api\\responses\\singlequizresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|solutionrelative:api\\responses\\singlequizresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -49,10 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|c:\\kg\\gitprojekthackathon\\api\\api\\models\\requests\\createquizrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|solutionrelative:api\\models\\requests\\createquizrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|c:\\kg\\gitprojekthackathon\\api\\api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|solutionrelative:api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4B682136-2B16-4F35-9349-5B9375C54358}|Api\\Api.csproj|c:\\kg\\gitprojekthackathon\\api\\api\\models\\answers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -130,7 +130,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 1157,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -142,31 +142,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SingleQuizResponse.cs",
-              "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Responses\\SingleQuizResponse.cs",
-              "RelativeDocumentMoniker": "Api\\Responses\\SingleQuizResponse.cs",
-              "ToolTip": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Responses\\SingleQuizResponse.cs",
-              "RelativeToolTip": "Api\\Responses\\SingleQuizResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T19:58:29.846Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "QuizService.cs",
               "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Services\\QuizService.cs",
               "RelativeDocumentMoniker": "Api\\Services\\QuizService.cs",
               "ToolTip": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Services\\QuizService.cs",
               "RelativeToolTip": "Api\\Services\\QuizService.cs",
-              "ViewState": "AgIAAKIAAAAAAAAAAAAawLAAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAMgAAAAAAAAAAAAAANwAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T16:08:11.26Z"
+              "WhenOpened": "2024-09-28T16:08:11.26Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "QuizDTO.cs",
               "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Models\\DTO\\QuizDTO.cs",
               "RelativeDocumentMoniker": "Api\\Models\\DTO\\QuizDTO.cs",
@@ -178,7 +167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "QuestionDTO.cs",
               "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Models\\DTO\\QuestionDTO.cs",
               "RelativeDocumentMoniker": "Api\\Models\\DTO\\QuestionDTO.cs",
@@ -190,7 +179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "AnswerDTO.cs",
               "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Models\\DTO\\AnswerDTO.cs",
               "RelativeDocumentMoniker": "Api\\Models\\DTO\\AnswerDTO.cs",
@@ -202,7 +191,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "DatabaseContext.cs",
               "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Data\\DatabaseContext.cs",
               "RelativeDocumentMoniker": "Api\\Data\\DatabaseContext.cs",
@@ -214,7 +203,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Quizes.cs",
               "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Models\\Quizes.cs",
               "RelativeDocumentMoniker": "Api\\Models\\Quizes.cs",
@@ -226,7 +215,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Questions.cs",
               "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Models\\Questions.cs",
               "RelativeDocumentMoniker": "Api\\Models\\Questions.cs",
@@ -244,14 +233,39 @@
               "RelativeDocumentMoniker": "Api\\Controllers\\QuizController.cs",
               "ToolTip": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Controllers\\QuizController.cs",
               "RelativeToolTip": "Api\\Controllers\\QuizController.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAAAFAAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAawGgAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-28T15:40:17.906Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 2,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Api\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Api\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAA1wCgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T12:11:18.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SingleQuizResponse.cs",
+              "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Responses\\SingleQuizResponse.cs",
+              "RelativeDocumentMoniker": "Api\\Responses\\SingleQuizResponse.cs",
+              "ToolTip": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Responses\\SingleQuizResponse.cs",
+              "RelativeToolTip": "Api\\Responses\\SingleQuizResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T19:58:29.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "UserDTO.cs",
               "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Models\\DTO\\UserDTO.cs",
               "RelativeDocumentMoniker": "Api\\Models\\DTO\\UserDTO.cs",
@@ -263,7 +277,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "Api\\Services\\UserService.cs",
@@ -275,7 +289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "CreateQuizRequest.cs",
               "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Models\\Requests\\CreateQuizRequest.cs",
               "RelativeDocumentMoniker": "Api\\Models\\Requests\\CreateQuizRequest.cs",
@@ -284,18 +298,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-28T15:44:49.492Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "Api\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\KG\\GITPROJEKTHACKATHON\\Api\\Api\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "Api\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T12:11:18.023Z"
             },
             {
               "$type": "Document",
