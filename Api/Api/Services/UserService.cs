@@ -1,5 +1,6 @@
 ﻿using Api.Data;
 using Api.Models;
+using Api.Models.DTO;
 using Api.Models.Requests;
 using Microsoft.EntityFrameworkCore;
 using System.Text.RegularExpressions;
@@ -78,6 +79,30 @@ namespace Api.Services
             catch (Exception ex)
             {
                 throw new Exception("Error occured during adding user to database");
+            }
+        }
+
+        public async Task<UserDTO> GetUser(string email, string password)
+        {
+            try
+            {
+                var user = await _dbContext.Users.FirstOrDefaultAsync(u => u.Email == email);
+                if (BCrypt.Net.BCrypt.Verify(password, user.Password))
+                {
+                    UserDTO userDTO = new UserDTO
+                    {
+                        Email = user.Email,
+                        Nick = user.Nick,
+                        Points = user.Points,
+                        Id = user.Id,
+                    };
+                    return userDTO;
+                }
+                return null;
+            }
+            catch(Exception ex)
+            {
+                throw new Exception("Error occured during logging user: " + ex.Message);
             }
         }
     }

@@ -1,4 +1,5 @@
 ﻿using Api.Data;
+using Api.Models.DTO;
 using Api.Models.Requests;
 using Api.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -31,6 +32,30 @@ namespace Api.Controllers
                 if (result)
                 {
                     return Ok(true);
+                }
+                return BadRequest();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+        }
+
+        [HttpGet("GetUser", Name = "GetUser")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<ActionResult<UserDTO>> GetUser(string email, string password)
+        {
+            try
+            {
+                UserService usersService = new UserService(_databaseContext);
+                var result = await usersService.GetUser(email, password);
+                if (result != null)
+                {
+                    return Ok(result);
                 }
                 return BadRequest();
             }
