@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import HomePage from './components/pages/HomePage.vue';
 import ShopPage from './components/pages/ShopPage.vue';
 import QuizListPage from './components/pages/QuizListPage.vue';
+import ProfilePage from './components/pages/ProfilePage.vue';
 import TakeQuizPage from './components/pages/TakeQuizPage.vue'; // Import nowego komponentu
 
 const routes = [
@@ -28,6 +29,11 @@ const routes = [
     component: TakeQuizPage,
     props: true,
   },
+  {
+    path: '/profile',
+    name: 'ProfilePage',
+    component: ProfilePage
+  }
 ];
 
 const router = createRouter({
