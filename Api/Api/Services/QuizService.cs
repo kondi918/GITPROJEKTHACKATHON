@@ -219,7 +219,7 @@ namespace Api.Services
                 {
                     throw new ArgumentException("QuizId musi być większy od zera.");
                 }
-                var question = _databaseContext.Questions.Include(q => q.Answers).FirstOrDefault(q => q.Id == questionId);
+                var question = await _databaseContext.Questions.Include(q => q.Answers).FirstOrDefaultAsync(q => q.Id == questionId);
                 QuestionDTO foundQuestion = new QuestionDTO
                 {
                     Id = question.Id,
