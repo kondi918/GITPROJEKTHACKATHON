@@ -86,6 +86,29 @@ namespace Api.Controllers
                 return StatusCode(500, ex.Message);
             }
         }
+        [HttpGet("GetQuestion", Name = "GetQuestion")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<ActionResult<List<AnswerDTO>>> GetQuestion(int questionId)
+        {
+            try
+            {
+                QuizService quizService = new QuizService(_databaseContext);
+                var result = await quizService.GetSingleQuestion(questionId);
+                if (result != null)
+                {
+                    return Ok(result);
+                }
+                return BadRequest();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, ex.Message);
+            }
+        }
 
         [HttpGet("GetAnswers", Name = "GetAnswers")]
         [ProducesResponseType(StatusCodes.Status200OK)]

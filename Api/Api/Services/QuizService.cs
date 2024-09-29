@@ -183,13 +183,6 @@ namespace Api.Services
                 {
                     throw new ArgumentException("QuizId musi być większy od zera.");
                 }
-                /*
-                var quiz = await _databaseContext.Quizes
-                    .Include(q => q.Questions)
-                    .Where(q => q.Id == quizId || q.Id == 1)
-                    .OrderBy(q => q.Id != quizId) // Priorytet dla quizId
-                    .FirstOrDefaultAsync();
-                */
 
                 var quiz = await _databaseContext.Quizes.Include(q => q.Questions).FirstOrDefaultAsync(q => q.Id == quizId);
 
@@ -216,6 +209,31 @@ namespace Api.Services
                 throw new Exception("Wystąpił błąd podczas pobierania quizu: " + ex.Message, ex);
             }
         }
+        //Getting single question below
+
+        public async Task<QuestionDTO> GetSingleQuestion(int questionId)
+        {
+            try
+            {
+                if (questionId <= 0)
+                {
+                    throw new ArgumentException("QuizId musi być większy od zera.");
+                }
+                var question = _databaseContext.Questions.Include(q => q.Answers).FirstOrDefault(q => q.Id == questionId);
+                QuestionDTO foundQuestion = new QuestionDTO
+                {
+                    Id = question.Id,
+                    QuestionText = question.QuestionText
+                };
+                return foundQuestion;
+            }
+            catch(Exception ex)
+            {
+                throw new Exception("Error occured while getting question: " + ex.Message);
+
+            }
+        }
+
 
         //Getting every answer below
 
