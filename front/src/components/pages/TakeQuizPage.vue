@@ -105,8 +105,11 @@ export default {
 
       // Pobierz losowe wyjaśnienie (zakładamy losowe API do wyjaśnienia)
       try {
-        const explanationResponse = await axios.get('http://localhost:5080/Quiz/GetRandomExplanation');
-        this.explanation = explanationResponse.data.explanation; // Losowe wyjaśnienie
+        const questionId = this.quiz.questionsIds[this.currentQuestionIndex]; // Pobranie id pytania
+        const explanationResponse = await axios.get('http://localhost:5080/Quiz/GetAIAnswer', {
+          params: { questionId },
+        });
+        this.explanation = explanationResponse.data; // Losowe wyjaśnienie
       } catch (error) {
         console.error('Błąd podczas pobierania wyjaśnienia:', error);
         this.explanation = 'Nie udało się pobrać wyjaśnienia.';
