@@ -3,9 +3,7 @@
     <template v-if="isLoggedIn">
       <!-- Główne komponenty aplikacji -->
       <UserProfileIcon />
-      <CategoryPage />
-      <ShopPage />
-      <AppQuizPage />
+      <router-view />
     </template>
     <template v-else>
       <LoginPage v-if="showLogin" @login="login" @show-register="showRegisterPage" />
@@ -15,9 +13,6 @@
 </template>
 
 <script>
-import AppQuizPage from './components/pages/AppQuizPage.vue';
-import CategoryPage from './components/pages/CategoryPage.vue';
-import ShopPage from './components/pages/ShopPage.vue';
 import UserProfileIcon from './components/parts/UserProfileIcon.vue';
 import LoginPage from './components/pages/LoginPage.vue';
 import RegisterPage from './components/pages/RegisterPage.vue';
@@ -25,29 +20,26 @@ import RegisterPage from './components/pages/RegisterPage.vue';
 export default {
   name: 'App',
   components: {
-    CategoryPage,
-    ShopPage,
     UserProfileIcon,
-    AppQuizPage,
     LoginPage,
     RegisterPage
   },
   data() {
     return {
       isLoggedIn: false,
-      showLogin: true // Kontrola, czy pokazujemy stronę logowania
+      showLogin: true
     };
   },
   methods: {
     login() {
       this.isLoggedIn = true;
-      this.showLogin = true; // Przełącz na stronę główną po zalogowaniu
+      this.showLogin = true;
     },
     showRegisterPage() {
-      this.showLogin = false; // Przełącz na stronę rejestracji
+      this.showLogin = false;
     },
     showLoginPage() {
-      this.showLogin = true; // Przełącz na stronę logowania
+      this.showLogin = true;
     }
   }
 };

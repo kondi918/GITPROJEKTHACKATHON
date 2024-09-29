@@ -1,22 +1,29 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import CategoryPage from './components/pages/CategoryPage.vue';
+import HomePage from './components/pages/HomePage.vue';
 import ShopPage from './components/pages/ShopPage.vue';
+import QuizListPage from './components/pages/QuizListPage.vue';
 
 const routes = [
   {
     path: '/',
-    name: 'CategoryPage',
-    component: CategoryPage,
+    name: 'HomePage',
+    component: HomePage,
   },
   {
     path: '/shop',
     name: 'ShopPage',
     component: ShopPage,
   },
+  {
+    path: '/category/:categoryName',
+    name: 'QuizList',
+    component: QuizListPage,
+    props: true,
+  },
 ];
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHistory(),
   routes,
 });
 
