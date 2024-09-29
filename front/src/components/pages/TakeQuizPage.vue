@@ -1,66 +1,36 @@
-<!-- TakeQuizPage.vue -->
 <template>
-  <div class="page container takeQuizPageContainer">
-    <!-- Strona tytułowa quizu -->
+  <div class="blockOfSomething">
     <div v-if="!quizStarted && !quizFinished" class="quiz-landing">
-      <h2 class="text-center mb-4">{{ quiz.title }}</h2>
-      <p class="text-center">{{ quiz.description }}</p>
-      <p class="text-center"><strong>Punkty do zdobycia:</strong> {{ quiz.pointRewards }}</p>
-      <div class="text-center mt-4">
-        <button class="btn btn-primary" @click="startQuiz">Rozpocznij quiz</button>
+      <h2>{{ quiz.title }}</h2>
+      <p>{{ quiz.description }}</p>
+      <button @click="startQuiz">Rozpocznij quiz</button>
+    </div>
+
+    <!-- Quiz question screen -->
+    <div v-if="quizStarted && !quizFinished" class="quiz-content">
+      <h2>{{ quiz.title }}</h2>
+      <p>Pytanie: {{ currentQuestion?.questionText }}</p>
+
+      <!-- Sekcja odpowiedzi -->
+      <div class="answerButtons" v-if="shuffledAnswers.length && !answered">
+        <button v-for="(answer, index) in shuffledAnswers" :key="index" @click="selectAnswer(answer)">
+          {{ answer.answerText }}
+        </button>
+      </div>
+
+      <!-- Sekcja wyjaśnień -->
+      <div v-else>
+        <p><strong>{{ isCorrect ? 'Poprawna odpowiedź!' : 'Niepoprawna odpowiedź.' }}</strong></p>
+        <p>Wyjaśnienie: {{ explanation }}</p>
+        <button @click="nextQuestion">{{ currentQuestionIndex + 1 < quiz.questionsIds.length ? 'Następne pytanie' : 'Zakończ quiz' }}</button>
       </div>
     </div>
 
-    <!-- Sekcja quizu -->
-    <div v-else-if="quizStarted && !quizFinished" class="quiz-content">
-      <h2 class="text-center mb-4">{{ quiz.title }}</h2>
-      
-      <!-- Bieżące pytanie -->
-      <div class="card">
-        <div class="card-body">
-          <h5>Pytanie {{ currentQuestionIndex + 1 }} z {{ questions.length }}</h5>
-          <p class="card-text">{{ currentQuestion.questionText }}</p>
-          
-          <!-- Odpowiedzi -->
-          <div v-if="!answered">
-            <div class="list-group">
-              <button
-                class="list-group-item list-group-item-action"
-                v-for="(answer, index) in shuffledAnswers"
-                :key="index"
-                @click="selectAnswer(answer)"
-              >
-                {{ answer.answerText }}
-              </button>
-            </div>
-          </div>
-
-          <!-- Wyjaśnienie po odpowiedzi -->
-          <div v-else class="explanation-section">
-            <p>
-              <strong>{{ isCorrect ? 'Poprawna odpowiedź!' : 'Niepoprawna odpowiedź.' }}</strong>
-            </p>
-            <p><strong>Wyjaśnienie:</strong> {{ currentQuestion.explanation }}</p>
-            <button class="btn btn-primary mt-3" @click="nextQuestion">
-              {{ currentQuestionIndex + 1 < questions.length ? 'Następne pytanie' : 'Zakończ quiz' }}
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Podsumowanie quizu -->
-    <div v-else-if="quizFinished" class="summary-section">
-      <h3 class="text-center">Quiz zakończony!</h3>
-      <p class="text-center">Zdobyłeś {{ score }} na {{ questions.length }} punktów.</p>
-      <div class="text-center mt-4">
-        <button class="btn btn-primary" @click="restartQuiz">Rozpocznij ponownie</button>
-      </div>
-    </div>
-
-    <!-- Quiz nie znaleziony -->
-    <div v-else class="text-center mt-5">
-      <p>Nie znaleziono quizu.</p>
+    <!-- Ekran końcowy -->
+    <div v-if="quizFinished" class="summary-section">
+      <h3>Quiz zakończony!</h3>
+      <p>Zdobyłeś {{ score }} na {{ quiz.questionsIds.length }} punktów.</p>
+      <button @click="restartQuiz">Rozpocznij ponownie</button>
     </div>
   </div>
 </template>
@@ -77,49 +47,19 @@ export default {
         title: 'Ładowanie quizu...',
         description: '',
         pointRewards: 0,
+        questionsIds: []
       },
-      questions: [
-        {
-          questionText: 'Jakie jest stolicą Polski?',
-          answers: [
-            { answerText: 'Warszawa', isCorrect: true },
-            { answerText: 'Kraków', isCorrect: false },
-            { answerText: 'Gdańsk', isCorrect: false },
-            { answerText: 'Wrocław', isCorrect: false },
-          ],
-          explanation: 'Warszawa jest stolicą Polski.',
-        },
-        {
-          questionText: 'Który pierwiastek ma symbol "O"?',
-          answers: [
-            { answerText: 'Złoto', isCorrect: false },
-            { answerText: 'Srebro', isCorrect: false },
-            { answerText: 'Tlen', isCorrect: true },
-            { answerText: 'Węgiel', isCorrect: false },
-          ],
-          explanation: 'Tlen ma symbol "O".',
-        },
-        {
-          questionText: 'Kto napisał "Pana Tadeusza"?',
-          answers: [
-            { answerText: 'Adam Mickiewicz', isCorrect: true },
-            { answerText: 'Juliusz Słowacki', isCorrect: false },
-            { answerText: 'Henryk Sienkiewicz', isCorrect: false },
-            { answerText: 'Bolesław Prus', isCorrect: false },
-          ],
-          explanation: '"Pan Tadeusz" napisał Adam Mickiewicz.',
-        },
-      ],
-      currentQuestionIndex: 0, // Indeks bieżącego pytania
-      currentQuestion: null, // Bieżące pytanie
-      shuffledAnswers: [], // Tasowane odpowiedzi
-      answered: false, // Czy pytanie zostało odpowiedziane
-      isCorrect: false, // Czy odpowiedź była poprawna
-      score: 0, // Wynik użytkownika
-      quizStarted: false, // Czy quiz został rozpoczęty
-      quizFinished: false, // Czy quiz został zakończony
-      loading: true, // Stan ładowania
-      error: false, // Stan błędu
+      currentQuestionIndex: 0,
+      currentQuestion: null,
+      shuffledAnswers: [],
+      answered: false,
+      isCorrect: false,
+      score: 0,
+      quizStarted: false,
+      quizFinished: false,
+      loading: true,
+      error: false,
+      explanation: '', // Nowe pole dla wyjaśnienia
     };
   },
   created() {
@@ -128,13 +68,11 @@ export default {
   methods: {
     async fetchQuizData() {
       try {
-        console.log('Pobieranie danych quizu dla quizId:', this.quizId);
-        // Pobierz dane quizu z użyciem query param
         const quizResponse = await axios.get('http://localhost:5080/Quiz/GetSingleQuiz', {
-          params: { quizId: this.quizId }, // Zgodnie z backendem oczekuje 'quizId'
+          params: { quizId: this.quizId },
         });
         this.quiz = quizResponse.data;
-        console.log('Odebrane dane quizu:', this.quiz);
+        await this.loadQuestion();
       } catch (error) {
         console.error('Błąd podczas pobierania danych quizu:', error);
         this.error = true;
@@ -142,31 +80,43 @@ export default {
         this.loading = false;
       }
     },
-    startQuiz() {
-      this.quizStarted = true;
-      this.currentQuestionIndex = 0;
-      this.currentQuestion = this.questions[this.currentQuestionIndex];
-      this.shuffleAnswers();
-    },
-    shuffleAnswers() {
-      if (this.currentQuestion && this.currentQuestion.answers) {
-        const answers = [...this.currentQuestion.answers];
-        this.shuffledAnswers = answers.sort(() => Math.random() - 0.5);
+    async loadQuestion() {
+      const questionId = this.quiz.questionsIds[this.currentQuestionIndex];
+      if (!questionId) return;
+
+      try {
+        const questionResponse = await axios.get('http://localhost:5080/Quiz/GetQuestion', {
+          params: { questionId },
+        });
+        this.currentQuestion = questionResponse.data;
+
+        const answersResponse = await axios.get('http://localhost:5080/Quiz/GetAnswers', {
+          params: { questionId },
+        });
+        this.shuffledAnswers = answersResponse.data.sort(() => Math.random() - 0.5);
+      } catch (error) {
+        console.error('Błąd podczas pobierania pytania lub odpowiedzi:', error);
       }
     },
-    selectAnswer(selectedAnswer) {
+    async selectAnswer(selectedAnswer) {
       this.answered = true;
       this.isCorrect = selectedAnswer.isCorrect;
-      if (this.isCorrect) {
-        this.score++;
+      if (this.isCorrect) this.score++;
+
+      // Pobierz losowe wyjaśnienie (zakładamy losowe API do wyjaśnienia)
+      try {
+        const explanationResponse = await axios.get('http://localhost:5080/Quiz/GetRandomExplanation');
+        this.explanation = explanationResponse.data.explanation; // Losowe wyjaśnienie
+      } catch (error) {
+        console.error('Błąd podczas pobierania wyjaśnienia:', error);
+        this.explanation = 'Nie udało się pobrać wyjaśnienia.';
       }
     },
-    nextQuestion() {
+    async nextQuestion() {
       this.answered = false;
       this.currentQuestionIndex++;
-      if (this.currentQuestionIndex < this.questions.length) {
-        this.currentQuestion = this.questions[this.currentQuestionIndex];
-        this.shuffleAnswers();
+      if (this.currentQuestionIndex < this.quiz.questionsIds.length) {
+        await this.loadQuestion();
       } else {
         this.quizFinished = true;
       }
@@ -180,6 +130,11 @@ export default {
       this.shuffledAnswers = [];
       this.answered = false;
       this.isCorrect = false;
+      this.explanation = '';
+    },
+    startQuiz() {
+      this.quizStarted = true;
+      this.loadQuestion();
     },
   },
 };
@@ -218,7 +173,10 @@ export default {
 }
 
 .quiz-content {
-  margin-top: 20px;
+  background-color: #1b1b2f;
+  padding: 40px;
+  border-radius: 15px;
+  color:white;
 }
 
 .card {
@@ -270,5 +228,27 @@ export default {
 
 .summary-section .btn-primary:hover {
   background-color: #45a049;
+}
+
+.blockOfSomething{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  width:500px;
+  height:300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.answerButtons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.answerButtons button{
+  width:20%;
+  border-radius:5px;
 }
 </style>
