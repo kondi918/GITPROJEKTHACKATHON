@@ -183,12 +183,15 @@ namespace Api.Services
                 {
                     throw new ArgumentException("QuizId musi być większy od zera.");
                 }
-
+                /*
                 var quiz = await _databaseContext.Quizes
                     .Include(q => q.Questions)
                     .Where(q => q.Id == quizId || q.Id == 1)
                     .OrderBy(q => q.Id != quizId) // Priorytet dla quizId
                     .FirstOrDefaultAsync();
+                */
+
+                var quiz = await _databaseContext.Quizes.Include(q => q.Questions).FirstOrDefaultAsync(q => q.Id == quizId);
 
                 if (quiz == null)
                 {
