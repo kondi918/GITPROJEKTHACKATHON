@@ -1,3 +1,4 @@
+<!-- QuizListPage.vue -->
 <template>
     <div class="page container quizListPageContainer">
       <h2 class="text-center mb-4">Quizy z kategorii: {{ categoryName }}</h2>
@@ -14,7 +15,7 @@
                   <h5 class="card-title">{{ quiz.title }}</h5>
                   <p class="card-text">{{ quiz.description }}</p>
                   <p class="card-text"><small class="text-muted">Nagroda: {{ quiz.pointRewards }} pkt</small></p>
-                  <button class="btn btn-primary">Rozpocznij Quiz</button>
+                  <button class="btn btn-primary" @click="startQuiz(quiz.id)">Rozpocznij Quiz</button>
                 </div>
               </div>
             </div>
@@ -57,9 +58,13 @@
           this.loading = false;
         }
       },
+      startQuiz(quizId) {
+        this.$router.push({ name: 'TakeQuiz', params: { quizId } });
+      },
     },
   };
   </script>
+
   
   <style scoped>
   .quizListPageContainer {

@@ -1,7 +1,9 @@
+// router.js
 import { createRouter, createWebHistory } from 'vue-router';
 import HomePage from './components/pages/HomePage.vue';
 import ShopPage from './components/pages/ShopPage.vue';
 import QuizListPage from './components/pages/QuizListPage.vue';
+import TakeQuizPage from './components/pages/TakeQuizPage.vue'; // Import nowego komponentu
 
 const routes = [
   {
@@ -18,6 +20,12 @@ const routes = [
     path: '/category/:categoryName',
     name: 'QuizList',
     component: QuizListPage,
+    props: true,
+  },
+  {
+    path: '/quiz/:quizId',
+    name: 'TakeQuiz',
+    component: TakeQuizPage,
     props: true,
   },
 ];

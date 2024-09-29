@@ -175,29 +175,45 @@ namespace Api.Services
             }
         }
         //Getting single Quiz below
-        public async Task<SingleQuizResponse> GetSingleQuiz(int categoryId)
+        public async Task<SingleQuizResponse> GetSingleQuiz(int quizId)
         {
             try
             {
-                SingleQuizResponse singleQuizResponse = new SingleQuizResponse();
-                var quiz = await _databaseContext.Quizes.Include(q => q.Questions).FirstOrDefaultAsync(q => q.Id == categoryId);
-                singleQuizResponse.Description = quiz.Description;
-                singleQuizResponse.Title = quiz.Title;
-                singleQuizResponse.Category = quiz.Category;
-                singleQuizResponse.PointRewards = quiz.PointRewards;
-                List<int> questionsIds = new List<int>();
-                foreach (var question in quiz.Questions)
+                if (quizId <= 0)
                 {
-                   questionsIds.Add(question.Id);
+                    throw new ArgumentException("QuizId musi być większy od zera.");
                 }
-                singleQuizResponse.questionsIds = questionsIds;
+
+                var quiz = await _databaseContext.Quizes
+                    .Include(q => q.Questions)
+                    .Where(q => q.Id == quizId || q.Id == 1)
+                    .OrderBy(q => q.Id != quizId) // Priorytet dla quizId
+                    .FirstOrDefaultAsync();
+
+                if (quiz == null)
+                {
+                    throw new Exception("Nie znaleziono quizu dla podanego Id ani quizu domyślnego.");
+                }
+
+                SingleQuizResponse singleQuizResponse = new SingleQuizResponse
+                {
+                    Description = quiz.Description,
+                    Title = quiz.Title,
+                    Category = quiz.Category,
+                    PointRewards = quiz.PointRewards,
+                    questionsIds = quiz.Questions.Select(question => question.Id).ToList()
+                };
+
+                Console.WriteLine($"Quiz zwrócony: Id = {quiz.Id}, Liczba pytań = {quiz.Questions.Count}");
+
                 return singleQuizResponse;
             }
             catch (Exception ex)
             {
-                throw new Exception("Error occured while getting all quizes: " + ex.Message);
+                throw new Exception("Wystąpił błąd podczas pobierania quizu: " + ex.Message, ex);
             }
         }
+
         //Getting every answer below
 
         public async Task<List<AnswerDTO>> GetAnswers(int questionId)
