@@ -4,7 +4,7 @@ namespace Api.Services
 {
     public class ChatService
     {
-        private const string ApiKey = "";
+        private string ApiKey = Environment.GetEnvironmentVariable("APIKEY");
         public async Task<string> GetChatAnswer(string prompt)
         {
             var client = new RestClient("https://api.openai.com/v1/chat/completions");

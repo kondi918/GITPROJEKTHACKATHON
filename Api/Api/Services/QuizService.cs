@@ -269,7 +269,9 @@ namespace Api.Services
                 var question = await _databaseContext.Questions.FirstOrDefaultAsync(q => q.Id == questionId);
                 var answer = await _databaseContext.Answers.FirstOrDefaultAsync(a => a.QuestionId == questionId && a.IsCorrect);
                 string AIQuestion = "Podaj bardzo krotko wyjasnienie, dlaczego poprawna odpowiedz na pytanie: " + question.QuestionText + " to: " + answer.AnswerText;
-                return AIQuestion;
+                ChatService chatService = new ChatService();
+                string AIAnswer = await chatService.GetChatAnswer(AIQuestion);
+                return AIAnswer;
             }
             catch(Exception ex)
             {

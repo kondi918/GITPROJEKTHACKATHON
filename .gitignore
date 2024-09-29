@@ -12,3 +12,4 @@ Api/Api/obj/Debug/net8.0/Api.AssemblyInfo.cs
 Api/Api/obj/Debug/net8.0/Api.AssemblyInfoInputs.cache
 Api/Api/obj/Debug/net8.0/Api.csproj.AssemblyReference.cache
 Api/Api/obj/Debug/net8.0/Api.GeneratedMSBuildEditorConfig.editorconfig
+Api/Api/.env

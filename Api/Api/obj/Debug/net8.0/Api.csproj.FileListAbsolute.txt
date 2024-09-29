@@ -274,3 +274,7 @@ C:\Users\sebas\OneDrive\Pulpit\GITPROJEKTHACKATHON\Api\Api\obj\Debug\net8.0\refi
 C:\Users\sebas\OneDrive\Pulpit\GITPROJEKTHACKATHON\Api\Api\obj\Debug\net8.0\Api.pdb
 C:\Users\sebas\OneDrive\Pulpit\GITPROJEKTHACKATHON\Api\Api\obj\Debug\net8.0\Api.genruntimeconfig.cache
 C:\Users\sebas\OneDrive\Pulpit\GITPROJEKTHACKATHON\Api\Api\obj\Debug\net8.0\ref\Api.dll
+C:\KG\GITPROJEKTHACKATHON\Api\Api\bin\Debug\net8.0\DotNetEnv.dll
+C:\KG\GITPROJEKTHACKATHON\Api\Api\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\KG\GITPROJEKTHACKATHON\Api\Api\bin\Debug\net8.0\RestSharp.dll
+C:\KG\GITPROJEKTHACKATHON\Api\Api\bin\Debug\net8.0\Sprache.dll
