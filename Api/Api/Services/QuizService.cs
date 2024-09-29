@@ -259,6 +259,25 @@ namespace Api.Services
                 throw new Exception("Error occured while getting all quizes: " + ex.Message);
             }
         }
+        public async Task<string> GetMessageFromAI(int questionId)
+        {
+            try
+            {
+                if (questionId <= 0)
+                {
+                    throw new ArgumentException("QuizId musi być większy od zera.");
+                }
+                var question = await _databaseContext.Questions.FirstOrDefaultAsync(q => q.Id == questionId);
+                var answer = await _databaseContext.Answers.FirstOrDefaultAsync(a => a.QuestionId == questionId && a.IsCorrect);
+                string AIQuestion = "Podaj bardzo krotko wyjasnienie, dlaczego poprawna odpowiedz na pytanie: " + question.QuestionText + " to: " + answer;
+                return AIQuestion;
+            }
+            catch(Exception ex)
+            {
+                throw new Exception("Error occured while getting message from AI: " + ex.Message);
+
+            }
+        }
 
     }
 }
