@@ -1,6 +1,6 @@
 ﻿using RestSharp;
 using Newtonsoft.Json.Linq;
-namespace Api.Services;
+namespace Api.Services
 {
     public class ChatService
     {
@@ -19,8 +19,8 @@ namespace Api.Services;
                 model = "gpt-3.5-turbo",
                 messages = new[]
                 {
-                    new { role = "user", content = prompt }
-                },
+                new { role = "user", content = prompt }
+            },
                 max_tokens = 100
             };
 
